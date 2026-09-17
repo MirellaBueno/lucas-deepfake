@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake - Informação e Prevenção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+```
+<header>
+    <div class="container">
+        <h1>Deepfake</h1>
+        <p class="subtitulo">Entenda a tecnologia e saiba como se proteger</p>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#tipos">Tipos</a>
+            <a href="#casos">Casos reais</a>
+            <a href="#evitar">Como evitar</a>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+
+    <!-- =========================
+         INÍCIO
+         ========================= -->
+
+    <section id="inicio" class="hero">
+        <div class="container">
+
+            <div class="texto-hero">
+                <h2>
+                    A inteligência artificial agora consegue facilmente
+                    roubar a identidade de outras pessoas, alterando rosto
+                    e voz da pessoa que está sendo usada, praticamente uma
+                    máscara completa.
+                </h2>
+
+                <p>
+                    Os deepfakes são uma tecnologia nova, e muitas pessoas,
+                    mesmo as mais jovens, correm o risco de cair nessa
+                    desinformação.
+                </p>
+            </div>
+
+            <div class="espaco-desenho">
+                <img
+                    src="https://www.kaspersky.com.br/content/pt-br/images/repository/isc/2020/how-to-protect-yourself-against-deepfake.jpg"
+                    alt="Exemplo de deepfake e manipulação digital">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         O QUE É DEEPFAKE
+         ========================= -->
+
+    <section class="secao">
+        <div class="container">
+
+            <h2>O que é um Deepfake?</h2>
+
+            <p>
+                Deepfake é o nome dado a conteúdos falsos ou manipulados
+                produzidos com o auxílio de inteligência artificial.
+                A tecnologia pode alterar imagens, vídeos e áudios para
+                fazer uma pessoa parecer dizer ou fazer algo que nunca fez.
+            </p>
+
+            <p>
+                Quanto mais avançada a tecnologia fica, mais difícil pode
+                ser perceber a diferença entre um conteúdo verdadeiro e
+                um conteúdo manipulado.
+            </p>
+
+            <div class="imagem-central">
+                <img
+                    src="https://forbes.com.br/wp-content/uploads/2022/05/deepfake.jpg"
+                    alt="Representação visual de tecnologia deepfake">
+            </div>
+
+            <div class="pergunta">
+                <strong>Mini questão:</strong>
+                <p>
+                    Você conseguiria identificar sozinho se um vídeo foi
+                    manipulado por inteligência artificial?
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         TIPOS
+         ========================= -->
+
+    <section id="tipos" class="secao fundo-azul">
+        <div class="container">
+
+            <h2>Tipos de Deepfake</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Troca de rosto</h3>
+
+                    <p>
+                        O rosto de uma pessoa é colocado no corpo de outra
+                        pessoa em uma imagem ou vídeo.
+                    </p>
+
+                    <div class="mini-desenho">
+                        <img
+                            src="https://www.aware.com/wp-content/uploads/2025/01/deepfake-biometric-face.jpg"
+                            alt="Exemplo de manipulação facial">
+                    </div>
+
+                    <div class="pergunta">
+                        <strong>Mini questão:</strong>
+                        <p>
+                            O rosto de uma pessoa em um vídeo é suficiente
+                            para provar que aquele vídeo é verdadeiro?
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <h3>Clonagem de voz</h3>
+
+                    <p>
+                        A inteligência artificial pode reproduzir a voz de
+                        uma pessoa a partir de gravações anteriores.
+                    </p>
+
+                    <div class="mini-desenho">
+                        <img
+                            src="https://dialogando.com.br/wp-content/uploads/2020/11/vivo-deepfake.png"
+                            alt="Representação de deepfake e inteligência artificial">
+                    </div>
+
+                    <div class="pergunta">
+                        <strong>Mini questão:</strong>
+                        <p>
+                            Você confiaria em uma ligação apenas porque
+                            reconheceu a voz de alguém?
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <h3>Vídeo manipulado</h3>
+
+                    <p>
+                        Um vídeo pode ser alterado para fazer uma pessoa
+                        parecer falar ou fazer algo que nunca aconteceu.
+                    </p>
+
+                    <div class="mini-desenho">
+                        <img
+                            src="https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/06/image_deepfakes_-1.jpg"
+                            alt="Exemplo de deepfakes em imagens e vídeos">
+                    </div>
+
+                    <div class="pergunta">
+                        <strong>Mini questão:</strong>
+                        <p>
+                            Um vídeo pode ser usado como prova sem
+                            verificarmos sua origem?
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <h3>Imagem gerada</h3>
+
+                    <p>
+                        Imagens podem ser criadas ou modificadas para
+                        representar pessoas, lugares e situações que
+                        nunca existiram.
+                    </p>
+
+                    <div class="mini-desenho">
+                        <img
+                            src="https://boscatti.adv.br/wp-content/uploads/2023/12/Deepfake.jpg"
+                            alt="Imagem representando a manipulação digital">
+                    </div>
+
+                    <div class="pergunta">
+                        <strong>Mini questão:</strong>
+                        <p>
+                            Uma fotografia na internet sempre representa
+                            uma situação que realmente aconteceu?
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         CASOS REAIS
+         ========================= -->
+
+    <section id="casos" class="secao">
+        <div class="container">
+
+            <h2>Casos reais</h2>
+
+            <p>
+                Deepfakes já foram utilizados em diferentes situações,
+                incluindo golpes, desinformação e manipulação de pessoas
+                conhecidas.
+            </p>
+
+
+            <article class="caso">
+                <div>
+                    <h3>Golpes usando clonagem de voz</h3>
+
+                    <p>
+                        Criminosos podem utilizar inteligência artificial
+                        para imitar a voz de uma pessoa e tentar convencer
+                        familiares ou outras pessoas a enviar dinheiro.
+                    </p>
+                </div>
+
+                <div class="espaco-desenho pequeno">
+                    <img
+                        src="https://dialogando.com.br/wp-content/uploads/2020/11/vivo-deepfake.png"
+                        alt="Exemplo relacionado a golpes e deepfake">
+                </div>
+            </article>
+
+
+            <article class="caso">
+                <div>
+                    <h3>Falsificação de pessoas públicas</h3>
+
+                    <p>
+                        Vídeos e áudios falsos de políticos, artistas e
+                        outras figuras públicas podem ser utilizados para
+                        espalhar declarações que nunca foram feitas.
+                    </p>
+                </div>
+
+                <div class="espaco-desenho pequeno">
+                    <img
+                        src="https://forbes.com.br/wp-content/uploads/2022/05/deepfake.jpg"
+                        alt="Exemplo de falsificação e manipulação digital">
+                </div>
+            </article>
+
+
+            <article class="caso">
+                <div>
+                    <h3>Desinformação na internet</h3>
+
+                    <p>
+                        Um conteúdo manipulado pode ser compartilhado
+                        rapidamente pelas redes sociais antes que as
+                        pessoas tenham tempo de verificar se ele é real.
+                    </p>
+                </div>
+
+                <div class="espaco-desenho pequeno">
+                    <img
+                        src="https://www.kaspersky.com.br/content/pt-br/images/repository/isc/2020/how-to-protect-yourself-against-deepfake.jpg"
+                        alt="Pessoa verificando informações sobre deepfake">
+                </div>
+            </article>
+
+
+            <div class="pergunta">
+                <strong>Mini questão:</strong>
+                <p>
+                    Se uma informação parece verdadeira, isso significa
+                    que podemos compartilhá-la imediatamente?
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         COMO EVITAR
+         ========================= -->
+
+    <section id="evitar" class="secao fundo-claro">
+        <div class="container">
+
+            <h2>Como evitar cair em um Deepfake?</h2>
+
+            <div class="lista-cuidados">
+
+                <div class="cuidado">
+                    <span>01</span>
+                    <div>
+                        <h3>Desconfie de movimentações suspeitas</h3>
+                        <p>
+                            Desconfie de vídeos que apresentam movimentos estranhos
+                            no rosto, na boca ou no corpo. Alguns deepfakes podem
+                            apresentar pequenas falhas que ajudam a identificar a
+                            manipulação.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="cuidado">
+                    <span>02</span>
+                    <div>
+                        <h3>Analise o vídeo com atenção</h3>
+                        <p>
+                            Observe os detalhes antes de acreditar no conteúdo.
+                            Preste atenção na iluminação, nas expressões faciais,
+                            na qualidade da imagem e na movimentação da pessoa.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="cuidado">
+                    <span>03</span>
+                    <div>
+                        <h3>Verifique sempre a informação</h3>
+                        <p>
+                            Procure a mesma informação em fontes confiáveis antes
+                            de acreditar ou compartilhar. Não confie apenas em um
+                            vídeo ou publicação encontrada nas redes sociais.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="cuidado">
+                    <span>04</span>
+                    <div>
+                        <h3>Cuidado com o que você publica</h3>
+                        <p>
+                            Tenha cuidado ao postar fotos, vídeos e áudios nas
+                            redes sociais. Esses conteúdos podem ser utilizados
+                            para criar materiais falsos com inteligência artificial.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="cuidado">
+                    <span>05</span>
+                    <div>
+                        <h3>Denuncie conteúdos suspeitos</h3>
+                        <p>
+                            Ao encontrar um conteúdo que pareça ser um deepfake,
+                            evite compartilhar e faça uma denúncia na plataforma.
+                            Dessa forma, você também ajuda a diminuir a
+                            desinformação na internet.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="espaco-desenho destaque">
+                <img
+                    src="https://www.kaspersky.com.br/content/pt-br/images/repository/isc/2020/how-to-protect-yourself-against-deepfake.jpg"
+                    alt="Como se proteger contra deepfakes">
+            </div>
+
+
+            <div class="pergunta">
+                <strong>Mini questão:</strong>
+                <p>
+                    Você costuma verificar uma informação antes de compartilhar?
+                    O que poderia fazer para identificar um possível deepfake?
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         CONCLUSÃO
+         ========================= -->
+
+    <section class="conclusao">
+        <div class="container">
+
+            <h2>Pense antes de acreditar</h2>
+
+            <p>
+                A inteligência artificial pode ser uma ferramenta útil,
+                mas também pode ser utilizada para criar conteúdos
+                enganosos. Desenvolver o hábito de verificar informações
+                é uma das melhores formas de evitar a desinformação.
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer>
+    <div class="container">
+        <p>Projeto educativo sobre Deepfake</p>
+    </div>
+</footer>
+```
+
+</body>
+
+</html>
