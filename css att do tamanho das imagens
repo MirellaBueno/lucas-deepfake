@@ -1,0 +1,485 @@
+/* =========================================
+CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #ffffff;
+color: #222222;
+line-height: 1.6;
+}
+
+.container {
+width: 90%;
+max-width: 1100px;
+margin: 0 auto;
+}
+
+/* =========================================
+CABEÇALHO
+========================================= */
+
+header {
+background-color: #3272b4;
+color: white;
+padding: 25px 0;
+border-bottom: 4px solid #285e94;
+}
+
+header h1 {
+font-size: 32px;
+margin-bottom: 3px;
+}
+
+.subtitulo {
+font-size: 16px;
+opacity: 0.9;
+}
+
+nav {
+margin-top: 20px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin-right: 25px;
+font-size: 15px;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+/* =========================================
+ÁREA PRINCIPAL
+========================================= */
+
+.hero {
+padding: 80px 0;
+background-color: #f5f8fb;
+}
+
+.hero .container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 50px;
+}
+
+.texto-hero {
+width: 60%;
+}
+
+.texto-hero h2 {
+color: #1e4f7d;
+font-size: 30px;
+line-height: 1.3;
+margin-bottom: 20px;
+}
+
+.texto-hero p {
+font-size: 18px;
+}
+
+/* =========================================
+IMAGENS
+========================================= */
+
+/* Todas as imagens */
+img {
+max-width: 100%;
+display: block;
+}
+
+/* -----------------------------------------
+IMAGEM PRINCIPAL
+Pequena/média e horizontal
+----------------------------------------- */
+
+.espaco-desenho {
+width: 350px;
+height: 200px;
+
+border: 2px solid #3272b4;
+border-radius: 8px;
+background-color: #ffffff;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+overflow: hidden;
+}
+
+.espaco-desenho img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+/* -----------------------------------------
+IMAGENS PEQUENAS DOS CASOS REAIS
+----------------------------------------- */
+
+.espaco-desenho.pequeno {
+width: 220px;
+height: 140px;
+flex-shrink: 0;
+}
+
+/* -----------------------------------------
+IMAGEM DE DESTAQUE
+Média e horizontal
+----------------------------------------- */
+
+.espaco-desenho.destaque {
+width: 100%;
+max-width: 600px;
+height: 240px;
+margin: 40px auto;
+}
+
+/* -----------------------------------------
+IMAGENS DOS CARDS
+Todas ficam iguais e horizontais
+----------------------------------------- */
+
+.mini-desenho {
+width: 100%;
+max-width: 320px;
+height: 160px;
+
+margin: 20px auto;
+
+border: 2px solid #8aaed0;
+border-radius: 6px;
+background-color: #f7f9fb;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+overflow: hidden;
+}
+
+.mini-desenho img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+/* =========================================
+IMAGEM CENTRAL
+========================================= */
+
+.imagem-central {
+width: 100%;
+max-width: 650px;
+height: 240px;
+
+margin: 35px auto;
+
+border-radius: 8px;
+overflow: hidden;
+background-color: #f5f8fb;
+}
+
+.imagem-central img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+/* =========================================
+SEÇÕES
+========================================= */
+
+.secao {
+padding: 70px 0;
+}
+
+.secao h2 {
+color: #285e94;
+font-size: 28px;
+margin-bottom: 25px;
+}
+
+.secao > .container > p {
+max-width: 850px;
+margin-bottom: 20px;
+}
+
+/* =========================================
+FUNDO AZUL
+========================================= */
+
+.fundo-azul {
+background-color: #3272b4;
+color: white;
+}
+
+.fundo-azul h2 {
+color: white;
+}
+
+/* =========================================
+CARDS DOS TIPOS
+========================================= */
+
+.cards {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 25px;
+margin-top: 30px;
+}
+
+.card {
+background-color: white;
+color: #222222;
+
+padding: 25px;
+border: 1px solid #d8e2ec;
+border-radius: 8px;
+
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+color: #285e94;
+font-size: 21px;
+margin-bottom: 10px;
+}
+
+/* =========================================
+MINI QUESTÕES
+========================================= */
+
+.pergunta {
+margin-top: 30px;
+padding: 18px 20px;
+
+background-color: #eef5fb;
+border-left: 4px solid #3272b4;
+
+color: #222222;
+}
+
+.pergunta strong {
+color: #285e94;
+}
+
+.pergunta p {
+margin-top: 5px;
+}
+
+/* =========================================
+CASOS REAIS
+========================================= */
+
+.caso {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+gap: 35px;
+
+padding: 30px 0;
+border-bottom: 1px solid #d9d9d9;
+}
+
+.caso > div:first-child {
+flex: 1;
+}
+
+.caso h3 {
+color: #285e94;
+font-size: 21px;
+margin-bottom: 8px;
+}
+
+/* =========================================
+COMO EVITAR
+========================================= */
+
+.fundo-claro {
+background-color: #f5f8fb;
+}
+
+.lista-cuidados {
+margin-top: 30px;
+}
+
+.cuidado {
+display: flex;
+align-items: flex-start;
+gap: 20px;
+
+padding: 20px 0;
+
+border-bottom: 1px solid #d7e0e8;
+}
+
+.cuidado span {
+min-width: 45px;
+height: 45px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+background-color: #3272b4;
+color: white;
+
+font-weight: bold;
+}
+
+.cuidado h3 {
+color: #285e94;
+margin-bottom: 5px;
+}
+
+/* =========================================
+CONCLUSÃO
+========================================= */
+
+.conclusao {
+padding: 60px 0;
+
+background-color: #3272b4;
+color: white;
+
+text-align: center;
+}
+
+.conclusao h2 {
+font-size: 28px;
+margin-bottom: 15px;
+}
+
+.conclusao p {
+max-width: 750px;
+margin: 0 auto;
+}
+
+/* =========================================
+RODAPÉ
+========================================= */
+
+footer {
+background-color: #1e4f7d;
+color: white;
+text-align: center;
+padding: 20px 0;
+
+font-size: 14px;
+}
+
+/* =========================================
+RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 750px) {
+
+.hero .container {
+flex-direction: column;
+}
+
+.texto-hero {
+width: 100%;
+}
+
+.texto-hero h2 {
+font-size: 25px;
+}
+
+/* Imagem principal no celular */
+.espaco-desenho {
+width: 100%;
+max-width: 350px;
+height: 190px;
+}
+
+/* Imagens pequenas dos casos */
+.espaco-desenho.pequeno {
+width: 100%;
+max-width: 300px;
+height: 170px;
+margin: 0 auto;
+}
+
+/* Imagem de destaque */
+.espaco-desenho.destaque {
+width: 100%;
+height: 200px;
+}
+
+/* Imagem central */
+.imagem-central {
+width: 100%;
+height: 200px;
+}
+
+/* Imagens dos cards */
+.mini-desenho {
+width: 100%;
+max-width: 300px;
+height: 160px;
+}
+
+/* Cards */
+.cards {
+grid-template-columns: 1fr;
+}
+
+/* Casos reais */
+.caso {
+flex-direction: column;
+align-items: stretch;
+}
+
+nav a {
+display: inline-block;
+margin-bottom: 8px;
+}
+}
+
+/* =========================================
+CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 480px) {
+
+.espaco-desenho {
+height: 170px;
+}
+
+.imagem-central {
+height: 180px;
+}
+
+.mini-desenho {
+height: 145px;
+}
+
+.espaco-desenho.pequeno {
+height: 160px;
+}
+
+.espaco-desenho.destaque {
+height: 180px;
+}
+}
