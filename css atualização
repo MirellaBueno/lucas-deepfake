@@ -1,0 +1,891 @@
+Perfeito. Agora tenho os dois arquivos. Vou fazer a integração de forma que **as imagens realmente apareçam no site**, em vez de deixar os blocos "ESPAÇO PARA DESENHO".
+
+Também vou corrigir a duplicação que existe no HTML e deixar a estrutura válida. Para evitar problemas, vou usar os **endereços diretos das imagens**, e não os links do Google Imagens.
+
+Abaixo estão os dois arquivos completos.
+
+### `index.html`
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake - Informação e Prevenção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+```
+<header>
+    <div class="container">
+        <h1>Deepfake</h1>
+        <p class="subtitulo">Entenda a tecnologia e saiba como se proteger</p>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#tipos">Tipos</a>
+            <a href="#casos">Casos reais</a>
+            <a href="#evitar">Como evitar</a>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+
+    <!-- =========================
+         INÍCIO
+         ========================= -->
+
+    <section id="inicio" class="hero">
+        <div class="container">
+
+            <div class="texto-hero">
+                <h2>
+                    A inteligência artificial agora consegue facilmente
+                    roubar a identidade de outras pessoas, alterando rosto
+                    e voz da pessoa que está sendo usada, praticamente uma
+                    máscara completa.
+                </h2>
+
+                <p>
+                    Os deepfakes são uma tecnologia nova, e muitas pessoas,
+                    mesmo as mais jovens, correm o risco de cair nessa
+                    desinformação.
+                </p>
+            </div>
+
+            <div class="espaco-desenho">
+                <img
+                    src="https://www.kaspersky.com.br/content/pt-br/images/repository/isc/2020/how-to-protect-yourself-against-deepfake.jpg"
+                    alt="Exemplo de deepfake e manipulação digital">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         O QUE É DEEPFAKE
+         ========================= -->
+
+    <section class="secao">
+        <div class="container">
+
+            <h2>O que é um Deepfake?</h2>
+
+            <p>
+                Deepfake é o nome dado a conteúdos falsos ou manipulados
+                produzidos com o auxílio de inteligência artificial.
+                A tecnologia pode alterar imagens, vídeos e áudios para
+                fazer uma pessoa parecer dizer ou fazer algo que nunca fez.
+            </p>
+
+            <p>
+                Quanto mais avançada a tecnologia fica, mais difícil pode
+                ser perceber a diferença entre um conteúdo verdadeiro e
+                um conteúdo manipulado.
+            </p>
+
+            <div class="imagem-central">
+                <img
+                    src="https://forbes.com.br/wp-content/uploads/2022/05/deepfake.jpg"
+                    alt="Representação visual de tecnologia deepfake">
+            </div>
+
+            <div class="pergunta">
+                <strong>Mini questão:</strong>
+                <p>
+                    Você conseguiria identificar sozinho se um vídeo foi
+                    manipulado por inteligência artificial?
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         TIPOS
+         ========================= -->
+
+    <section id="tipos" class="secao fundo-azul">
+        <div class="container">
+
+            <h2>Tipos de Deepfake</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Troca de rosto</h3>
+
+                    <p>
+                        O rosto de uma pessoa é colocado no corpo de outra
+                        pessoa em uma imagem ou vídeo.
+                    </p>
+
+                    <div class="mini-desenho">
+                        <img
+                            src="https://www.aware.com/wp-content/uploads/2025/01/deepfake-biometric-face.jpg"
+                            alt="Exemplo de manipulação facial">
+                    </div>
+
+                    <div class="pergunta">
+                        <strong>Mini questão:</strong>
+                        <p>
+                            O rosto de uma pessoa em um vídeo é suficiente
+                            para provar que aquele vídeo é verdadeiro?
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <h3>Clonagem de voz</h3>
+
+                    <p>
+                        A inteligência artificial pode reproduzir a voz de
+                        uma pessoa a partir de gravações anteriores.
+                    </p>
+
+                    <div class="mini-desenho">
+                        <img
+                            src="https://dialogando.com.br/wp-content/uploads/2020/11/vivo-deepfake.png"
+                            alt="Representação de deepfake e inteligência artificial">
+                    </div>
+
+                    <div class="pergunta">
+                        <strong>Mini questão:</strong>
+                        <p>
+                            Você confiaria em uma ligação apenas porque
+                            reconheceu a voz de alguém?
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <h3>Vídeo manipulado</h3>
+
+                    <p>
+                        Um vídeo pode ser alterado para fazer uma pessoa
+                        parecer falar ou fazer algo que nunca aconteceu.
+                    </p>
+
+                    <div class="mini-desenho">
+                        <img
+                            src="https://jornal.unicamp.br/wp-content/uploads/sites/32/2026/06/image_deepfakes_-1.jpg"
+                            alt="Exemplo de deepfakes em imagens e vídeos">
+                    </div>
+
+                    <div class="pergunta">
+                        <strong>Mini questão:</strong>
+                        <p>
+                            Um vídeo pode ser usado como prova sem
+                            verificarmos sua origem?
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <h3>Imagem gerada</h3>
+
+                    <p>
+                        Imagens podem ser criadas ou modificadas para
+                        representar pessoas, lugares e situações que
+                        nunca existiram.
+                    </p>
+
+                    <div class="mini-desenho">
+                        <img
+                            src="https://boscatti.adv.br/wp-content/uploads/2023/12/Deepfake.jpg"
+                            alt="Imagem representando a manipulação digital">
+                    </div>
+
+                    <div class="pergunta">
+                        <strong>Mini questão:</strong>
+                        <p>
+                            Uma fotografia na internet sempre representa
+                            uma situação que realmente aconteceu?
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         CASOS REAIS
+         ========================= -->
+
+    <section id="casos" class="secao">
+        <div class="container">
+
+            <h2>Casos reais</h2>
+
+            <p>
+                Deepfakes já foram utilizados em diferentes situações,
+                incluindo golpes, desinformação e manipulação de pessoas
+                conhecidas.
+            </p>
+
+
+            <article class="caso">
+                <div>
+                    <h3>Golpes usando clonagem de voz</h3>
+
+                    <p>
+                        Criminosos podem utilizar inteligência artificial
+                        para imitar a voz de uma pessoa e tentar convencer
+                        familiares ou outras pessoas a enviar dinheiro.
+                    </p>
+                </div>
+
+                <div class="espaco-desenho pequeno">
+                    <img
+                        src="https://dialogando.com.br/wp-content/uploads/2020/11/vivo-deepfake.png"
+                        alt="Exemplo relacionado a golpes e deepfake">
+                </div>
+            </article>
+
+
+            <article class="caso">
+                <div>
+                    <h3>Falsificação de pessoas públicas</h3>
+
+                    <p>
+                        Vídeos e áudios falsos de políticos, artistas e
+                        outras figuras públicas podem ser utilizados para
+                        espalhar declarações que nunca foram feitas.
+                    </p>
+                </div>
+
+                <div class="espaco-desenho pequeno">
+                    <img
+                        src="https://forbes.com.br/wp-content/uploads/2022/05/deepfake.jpg"
+                        alt="Exemplo de falsificação e manipulação digital">
+                </div>
+            </article>
+
+
+            <article class="caso">
+                <div>
+                    <h3>Desinformação na internet</h3>
+
+                    <p>
+                        Um conteúdo manipulado pode ser compartilhado
+                        rapidamente pelas redes sociais antes que as
+                        pessoas tenham tempo de verificar se ele é real.
+                    </p>
+                </div>
+
+                <div class="espaco-desenho pequeno">
+                    <img
+                        src="https://www.kaspersky.com.br/content/pt-br/images/repository/isc/2020/how-to-protect-yourself-against-deepfake.jpg"
+                        alt="Pessoa verificando informações sobre deepfake">
+                </div>
+            </article>
+
+
+            <div class="pergunta">
+                <strong>Mini questão:</strong>
+                <p>
+                    Se uma informação parece verdadeira, isso significa
+                    que podemos compartilhá-la imediatamente?
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         COMO EVITAR
+         ========================= -->
+
+    <section id="evitar" class="secao fundo-claro">
+        <div class="container">
+
+            <h2>Como evitar cair em um Deepfake?</h2>
+
+            <div class="lista-cuidados">
+
+                <div class="cuidado">
+                    <span>01</span>
+                    <div>
+                        <h3>Desconfie de movimentações suspeitas</h3>
+                        <p>
+                            Desconfie de vídeos que apresentam movimentos estranhos
+                            no rosto, na boca ou no corpo. Alguns deepfakes podem
+                            apresentar pequenas falhas que ajudam a identificar a
+                            manipulação.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="cuidado">
+                    <span>02</span>
+                    <div>
+                        <h3>Analise o vídeo com atenção</h3>
+                        <p>
+                            Observe os detalhes antes de acreditar no conteúdo.
+                            Preste atenção na iluminação, nas expressões faciais,
+                            na qualidade da imagem e na movimentação da pessoa.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="cuidado">
+                    <span>03</span>
+                    <div>
+                        <h3>Verifique sempre a informação</h3>
+                        <p>
+                            Procure a mesma informação em fontes confiáveis antes
+                            de acreditar ou compartilhar. Não confie apenas em um
+                            vídeo ou publicação encontrada nas redes sociais.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="cuidado">
+                    <span>04</span>
+                    <div>
+                        <h3>Cuidado com o que você publica</h3>
+                        <p>
+                            Tenha cuidado ao postar fotos, vídeos e áudios nas
+                            redes sociais. Esses conteúdos podem ser utilizados
+                            para criar materiais falsos com inteligência artificial.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="cuidado">
+                    <span>05</span>
+                    <div>
+                        <h3>Denuncie conteúdos suspeitos</h3>
+                        <p>
+                            Ao encontrar um conteúdo que pareça ser um deepfake,
+                            evite compartilhar e faça uma denúncia na plataforma.
+                            Dessa forma, você também ajuda a diminuir a
+                            desinformação na internet.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="espaco-desenho destaque">
+                <img
+                    src="https://www.kaspersky.com.br/content/pt-br/images/repository/isc/2020/how-to-protect-yourself-against-deepfake.jpg"
+                    alt="Como se proteger contra deepfakes">
+            </div>
+
+
+            <div class="pergunta">
+                <strong>Mini questão:</strong>
+                <p>
+                    Você costuma verificar uma informação antes de compartilhar?
+                    O que poderia fazer para identificar um possível deepfake?
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================
+         CONCLUSÃO
+         ========================= -->
+
+    <section class="conclusao">
+        <div class="container">
+
+            <h2>Pense antes de acreditar</h2>
+
+            <p>
+                A inteligência artificial pode ser uma ferramenta útil,
+                mas também pode ser utilizada para criar conteúdos
+                enganosos. Desenvolver o hábito de verificar informações
+                é uma das melhores formas de evitar a desinformação.
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer>
+    <div class="container">
+        <p>Projeto educativo sobre Deepfake</p>
+    </div>
+</footer>
+```
+
+</body>
+
+</html>
+
+### `style.css`
+
+/* =========================================
+CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #ffffff;
+color: #222222;
+line-height: 1.6;
+}
+
+.container {
+width: 90%;
+max-width: 1100px;
+margin: 0 auto;
+}
+
+/* =========================================
+CABEÇALHO
+========================================= */
+
+header {
+background-color: #3272b4;
+color: white;
+padding: 25px 0;
+border-bottom: 4px solid #285e94;
+}
+
+header h1 {
+font-size: 32px;
+margin-bottom: 3px;
+}
+
+.subtitulo {
+font-size: 16px;
+opacity: 0.9;
+}
+
+nav {
+margin-top: 20px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin-right: 25px;
+font-size: 15px;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+/* =========================================
+ÁREA PRINCIPAL
+========================================= */
+
+.hero {
+padding: 80px 0;
+background-color: #f5f8fb;
+}
+
+.hero .container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 50px;
+}
+
+.texto-hero {
+width: 60%;
+}
+
+.texto-hero h2 {
+color: #1e4f7d;
+font-size: 30px;
+line-height: 1.3;
+margin-bottom: 20px;
+}
+
+.texto-hero p {
+font-size: 18px;
+}
+
+/* =========================================
+IMAGENS
+========================================= */
+
+.espaco-desenho {
+width: 350px;
+height: 250px;
+
+```
+border: 2px solid #3272b4;
+border-radius: 8px;
+background-color: #ffffff;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+overflow: hidden;
+```
+
+}
+
+.espaco-desenho img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+.espaco-desenho.pequeno {
+width: 250px;
+height: 170px;
+flex-shrink: 0;
+}
+
+.espaco-desenho.destaque {
+width: 100%;
+height: 300px;
+margin: 40px 0;
+}
+
+.mini-desenho {
+height: 180px;
+margin: 20px 0;
+
+```
+border: 2px solid #8aaed0;
+border-radius: 6px;
+background-color: #f7f9fb;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+overflow: hidden;
+```
+
+}
+
+.mini-desenho img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+/* =========================================
+IMAGEM CENTRAL
+========================================= */
+
+.imagem-central {
+width: 100%;
+max-width: 850px;
+height: 300px;
+margin: 35px auto;
+
+```
+border-radius: 8px;
+overflow: hidden;
+background-color: #f5f8fb;
+```
+
+}
+
+.imagem-central img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+/* =========================================
+SEÇÕES
+========================================= */
+
+.secao {
+padding: 70px 0;
+}
+
+.secao h2 {
+color: #285e94;
+font-size: 28px;
+margin-bottom: 25px;
+}
+
+.secao > .container > p {
+max-width: 850px;
+margin-bottom: 20px;
+}
+
+/* =========================================
+FUNDO AZUL
+========================================= */
+
+.fundo-azul {
+background-color: #3272b4;
+color: white;
+}
+
+.fundo-azul h2 {
+color: white;
+}
+
+/* =========================================
+CARDS DOS TIPOS
+========================================= */
+
+.cards {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 25px;
+margin-top: 30px;
+}
+
+.card {
+background-color: white;
+color: #222222;
+
+```
+padding: 25px;
+border: 1px solid #d8e2ec;
+border-radius: 8px;
+
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+```
+
+}
+
+.card h3 {
+color: #285e94;
+font-size: 21px;
+margin-bottom: 10px;
+}
+
+/* =========================================
+MINI QUESTÕES
+========================================= */
+
+.pergunta {
+margin-top: 30px;
+padding: 18px 20px;
+
+```
+background-color: #eef5fb;
+border-left: 4px solid #3272b4;
+
+color: #222222;
+```
+
+}
+
+.pergunta strong {
+color: #285e94;
+}
+
+.pergunta p {
+margin-top: 5px;
+}
+
+/* =========================================
+CASOS REAIS
+========================================= */
+
+.caso {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+```
+gap: 35px;
+
+padding: 30px 0;
+border-bottom: 1px solid #d9d9d9;
+```
+
+}
+
+.caso > div:first-child {
+flex: 1;
+}
+
+.caso h3 {
+color: #285e94;
+font-size: 21px;
+margin-bottom: 8px;
+}
+
+/* =========================================
+COMO EVITAR
+========================================= */
+
+.fundo-claro {
+background-color: #f5f8fb;
+}
+
+.lista-cuidados {
+margin-top: 30px;
+}
+
+.cuidado {
+display: flex;
+align-items: flex-start;
+gap: 20px;
+
+```
+padding: 20px 0;
+
+border-bottom: 1px solid #d7e0e8;
+```
+
+}
+
+.cuidado span {
+min-width: 45px;
+height: 45px;
+
+```
+display: flex;
+align-items: center;
+justify-content: center;
+
+background-color: #3272b4;
+color: white;
+
+font-weight: bold;
+```
+
+}
+
+.cuidado h3 {
+color: #285e94;
+margin-bottom: 5px;
+}
+
+/* =========================================
+CONCLUSÃO
+========================================= */
+
+.conclusao {
+padding: 60px 0;
+
+```
+background-color: #3272b4;
+color: white;
+
+text-align: center;
+```
+
+}
+
+.conclusao h2 {
+font-size: 28px;
+margin-bottom: 15px;
+}
+
+.conclusao p {
+max-width: 750px;
+margin: 0 auto;
+}
+
+/* =========================================
+RODAPÉ
+========================================= */
+
+footer {
+background-color: #1e4f7d;
+color: white;
+text-align: center;
+padding: 20px 0;
+
+```
+font-size: 14px;
+```
+
+}
+
+/* =========================================
+RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 750px) {
+
+```
+.hero .container {
+    flex-direction: column;
+}
+
+.texto-hero {
+    width: 100%;
+}
+
+.texto-hero h2 {
+    font-size: 25px;
+}
+
+.espaco-desenho {
+    width: 100%;
+}
+
+.espaco-desenho.pequeno {
+    width: 100%;
+    height: 220px;
+}
+
+.espaco-desenho.destaque {
+    height: 220px;
+}
+
+.imagem-central {
+    height: 230px;
+}
+
+.mini-desenho {
+    height: 200px;
+}
+
+.cards {
+    grid-template-columns: 1fr;
+}
+
+.caso {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+nav a {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+```
+
+}
+
+**Importante:** alguns sites podem bloquear imagens sendo carregadas diretamente por outro site (hotlink). Se alguma delas aparecer quebrada no seu navegador, o mais seguro é **baixar as imagens para uma pasta do projeto**, por exemplo `imagens/`, e usar `src="imagens/deepfake.jpg"`.
